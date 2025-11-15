@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM78L12ACMX_NOPB
+D 100-mA Fixed Output Linear Regulator
+K
+F http://www.ti.com/lit/gpn/lm78l
+$ENDCMP
+#
+#End Doc Library

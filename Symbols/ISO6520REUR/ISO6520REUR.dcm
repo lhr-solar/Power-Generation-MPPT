@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISO6520REUR
+D Digital Isolators Functional isolation dual-channel 2/0 digital isolator
+K
+F https://www.ti.com/lit/ds/symlink/iso6520.pdf?ts=1715580466591&ref_url=https%253A%252F%252Fwww.mouser.ch%252F
+$ENDCMP
+#
+#End Doc Library

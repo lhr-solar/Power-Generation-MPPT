@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMC1300DWVR
+D +/-250 mV-Input Reinforced Isolated Amplifier with High CMTI for Current Sensing
+K
+F http://www.ti.com/lit/gpn/amc1300
+$ENDCMP
+#
+#End Doc Library
