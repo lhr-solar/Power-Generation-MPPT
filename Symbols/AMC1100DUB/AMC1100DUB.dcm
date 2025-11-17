@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMC1100DUB
+D Differential Isolation Amplifier SOP8 AMC1100DUB, Isolation Amplifier, 8-Pin SOP
+K
+F http://www.ti.com/lit/ds/symlink/amc1100.pdf
+$ENDCMP
+#
+#End Doc Library
