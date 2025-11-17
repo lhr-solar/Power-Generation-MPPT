@@ -1694,6 +1694,16 @@
 		)
 		(uuid 92cef3f9-7df1-478a-b020-9d7475aa3842)
 	)
+	(text "No vref chip needed since tying ref to gnd. \n"
+		(exclude_from_sim no)
+		(at 90.678 38.354 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "162a2ae4-7360-4f2a-b51d-90cb16139cc1")
+	)
 	(text "There aren't really isolated amplifiers on the\nmarket that let us achieve the desired granularity\nwith a small shunt resistor, and with the single\nended output needed to interface with the PSOM ADC. \nTherefore i chose to use a discrete, isolated ADC. \n"
 		(exclude_from_sim no)
 		(at 45.72 23.622 0)
@@ -1793,6 +1803,12 @@
 		(uuid "1d810292-2d55-4b62-b38d-1c33c40d8900")
 	)
 	(junction
+		(at 24.13 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "637b043c-7beb-4edc-8e0b-a8970846ffe8")
+	)
+	(junction
 		(at 135.89 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1809,6 +1825,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8b2d760-8cf2-4a85-b9c5-71822e6e284b")
+	)
+	(junction
+		(at 101.6 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ece18115-66ad-4352-8285-6167a1985cfa")
 	)
 	(no_connect
 		(at 243.84 73.66)
@@ -1870,13 +1892,13 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 172.72) (xy 73.66 176.53)
+			(xy 24.13 63.5) (xy 24.13 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14fdf28a-5566-4953-a357-c5ec5a4c4957")
+		(uuid "1c1cd651-13b1-4d25-9cf3-7bc2a49d6f93")
 	)
 	(wire
 		(pts
@@ -1927,6 +1949,16 @@
 			(type default)
 		)
 		(uuid "33855ce5-6f5c-4cda-b1c4-9409b3701ce3")
+	)
+	(wire
+		(pts
+			(xy 114.3 62.23) (xy 101.6 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c65abe-ce0a-46f4-a04f-c3b7b0f3c2d4")
 	)
 	(wire
 		(pts
@@ -2010,6 +2042,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 63.5) (xy 24.13 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ea4fbbf-223e-4fbb-97fd-d99c2df85e3a")
+	)
+	(wire
+		(pts
 			(xy 31.75 101.6) (xy 31.75 118.11)
 		)
 		(stroke
@@ -2037,16 +2079,6 @@
 			(type default)
 		)
 		(uuid "7992d800-87e5-4eaa-aa19-1a146b07178b")
-	)
-	(wire
-		(pts
-			(xy 73.66 185.42) (xy 73.66 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "894c42f8-c78e-45ac-86c2-f568c027fa4f")
 	)
 	(wire
 		(pts
@@ -2190,6 +2222,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 62.23) (xy 101.6 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b410bc-3eec-43f2-8680-52c461131d39")
+	)
+	(wire
+		(pts
 			(xy 104.14 100.33) (xy 104.14 116.84)
 		)
 		(stroke
@@ -2238,16 +2280,6 @@
 		)
 		(uuid "18d20223-cf46-48b3-b267-93ab0e88099f")
 	)
-	(label "Vref"
-		(at 39.37 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "400e3dae-81cd-425f-8866-9a1062feee34")
-	)
 	(label "Battery_C"
 		(at 210.82 68.58 180)
 		(effects
@@ -2268,16 +2300,6 @@
 		)
 		(uuid "64732800-8177-469a-9b25-20f7c5b73c01")
 	)
-	(label "Vref"
-		(at 73.66 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d79f6d4-15ba-4168-81e8-2a641fd54c83")
-	)
 	(label "Array_V"
 		(at 147.32 97.79 0)
 		(effects
@@ -2287,16 +2309,6 @@
 			(justify left bottom)
 		)
 		(uuid "ada98b61-7487-4132-8e2b-e0cf16e7eedf")
-	)
-	(label "Vref"
-		(at 114.3 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c406407d-a09c-4342-9c69-ee754ae94486")
 	)
 	(label "Array_C"
 		(at 210.82 66.04 180)
@@ -3438,72 +3450,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5239f744-91c6-4107-b968-47e568cc792c")
-		(property "Reference" "#PWR040"
-			(at 73.66 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "HV_GND"
-			(at 73.66 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ad40175-eb7d-4ce4-b6b3-7f77447553bf")
-		)
-		(instances
-			(project "MPPT"
-				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
-					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 62.23 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3768,74 +3714,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 73.66 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68cb99ff-83ab-4eae-8796-f1ef72cbf7fd")
-		(property "Reference" "R2"
-			(at 80.01 168.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 77.47 168.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.882 168.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 73.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b3420593-73de-4c58-819e-2066df94e364")
-		)
-		(pin "1"
-			(uuid "dc800fdd-9ce5-45b1-8ba0-668cbb7481d9")
-		)
-		(instances
-			(project ""
-				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 232.41 99.06 0)
 		(unit 1)
@@ -4032,74 +3910,6 @@
 			(project "MPPT"
 				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
 					(reference "#PWR078")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 73.66 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f4b66ac-ce37-46ba-8c59-df3d893dd98b")
-		(property "Reference" "R3"
-			(at 80.01 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 77.47 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.882 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 73.66 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0d5a9204-be79-4513-8550-03f83db691d0")
-		)
-		(pin "1"
-			(uuid "bddd0953-df46-486c-953d-eb6a79d5c373")
-		)
-		(instances
-			(project "MPPT"
-				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4905,73 +4715,6 @@
 			(project "MPPT"
 				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
 					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 73.66 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a849fe8a-9021-489d-a31c-b93cece2303e")
-		(property "Reference" "#PWR039"
-			(at 73.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3_HV"
-			(at 73.6601 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 73.66 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1eccca5e-5ba3-4fad-8331-22a9ccc51e9c")
-		)
-		(instances
-			(project "MPPT"
-				(path "/6d40be4d-0dd8-413a-96e6-eae9a4f7a83b/942a0cc4-5317-4106-a163-7b979d86d712"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
